@@ -146,6 +146,7 @@ margin-bottom: auto;
     font-size: 1em;
     text-shadow: 1em 1em #000;
     font-weight: bolder;
+    width: 200px;
 }
 .btn {
     border-radius: 400px;
@@ -157,7 +158,6 @@ margin-bottom: auto;
     margin-bottom: .5em;
     color: #000;
     margin-right: .5em;
-   
 }
 
 .btn-outline {
