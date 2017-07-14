@@ -6333,6 +6333,9 @@ button.close {
   background-color: rgba(0, 0, 0, 0);
   filter: alpha(opacity=50);
   opacity: .5;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
 }
 .carousel-control.left {
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
@@ -6424,9 +6427,9 @@ button.close {
 }
 .carousel-caption {
   position: absolute;
-  right: 15%;
+  right: 0;
   bottom: 20%;
-  left: 15%;
+  left: 0;
   z-index: 90;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -6458,8 +6461,8 @@ button.close {
     margin-right: -10px;
   }
   .carousel-caption {
-    right: 20%;
-    left: 20%;
+    right: 10%;
+    left: 10%;
     padding-bottom: 30px;
   }
   .carousel-indicators {
