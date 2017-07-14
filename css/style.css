@@ -165,5 +165,12 @@ margin-bottom: auto;
     border: 2px solid;
 }
 
+.timer {
+    width: 100px;
+}
 
-    
+@media(max-width: 30em) {
+    .timer {
+        width: 50px;
+    }
+}
