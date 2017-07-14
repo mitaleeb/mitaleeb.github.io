@@ -1,4 +1,4 @@
-# [Little Mit's Kitchen]
+# Little Mit's Kitchen
 A work in progress food blog utilizing bootstrap framework
 
 ## Creator
