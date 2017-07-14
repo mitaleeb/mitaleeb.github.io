@@ -128,11 +128,12 @@ h1{
     z-index: 101;
 }
 
-.modal-intro{
-font-family: 'Raleway', sans-serif;
+.modal-intro {
+font-family:'Raleway', sans-serif;
 font-size: .7em;
 margin-bottom: auto;
 }
+
 .modal-body {
 padding: 16px 20px;
 font-family: 'Raleway', sans-serif;
