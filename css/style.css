@@ -133,7 +133,10 @@ font-family: 'Raleway', sans-serif;
 font-size: .7em;
 margin-bottom: auto;
 }
-.modal-body {padding: 16px 20px;}
+.modal-body {
+padding: 16px 20px;
+font-family: 'Raleway', sans-serif;
+}
 
 .modal-footer {
     padding: 2px 16px;
