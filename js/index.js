@@ -39,7 +39,7 @@ function initializeClock(id, endtime) {
 
 
 var now = new Date();
-var deadline = new Date(Date.parse(new Date('09/26/2017 12:00 AM')));
+var deadline = new Date(Date.parse(new Date('10/1/2017 12:00 AM')));
 var difference = deadline - now;
 
 initializeClock('clockdiv', deadline);
