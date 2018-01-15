@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Little Mit's Kitchen</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" id="bulma" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.2/css/bulma.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Nixie+One|Mr+De+Haviland" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300|Lato:300|Montserrat:300" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    
+    <nav class="nav section nav-bub" id="top">
+      <div class="nav-left">
+        <a class="nav-item" href="index.html">
+          <img src="./images/LMK%20Logo.png" alt="LMK Logo"/>
+        </a>
+      </div>
+
+
+      <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+      <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
+      <span class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+
+      <!-- This "nav-menu" is hidden on mobile -->
+      <!-- Add the modifier "is-active" to display it on mobile -->
+      <div class="nav-right nav-menu">
+        <a class="nav-item navbar-item" href="recipes.html">
+         Recipes
+        </a>
+        <a class="nav-item navbar-item" href="https://urlgeni.us/instagram/bqsm">
+          Instagram
+        </a>
+        <a class="nav-item navbar-item" href="about.html">
+          About Me
+        </a>
+      </div>
+    </nav>
+  </div>
+  
+  <h1 class="title is-1" id="recipe"></h1>
+  <div class="content">
+  <div class="adjust-align">
+  <img id="image" class="recipe_image_display"/>
+  <h2 class="title is-2">Ingredients</h2>
+  <div id="ingredients" class="ingredients"></div>
+  <h2 class="title is-2">Instructions</h2>
+  <div id="instructions" class="instructions"></div>
+  </div>
+  </div>
+<script type="text/javascript">  
+function getParameterByName(name) {
+  var url = window.location.href;
+  name = name.replace(/[\[\]]/g, "\\$&");
+  var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"), results = regex.exec(url);
+  if (!results) return null;
+  if (!results[2]) return '';
+  return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+var dish = getParameterByName('dish');  
+document.getElementById('recipe').innerHTML = dish;
+      
+var request = new XMLHttpRequest();
+request.open("GET", "./js/recipes.json", true);
+request.onload = function (e) {
+  if (request.readyState === 4) {
+      var recipeData = JSON.parse(request.responseText);
+      var recipe = null;
+      for (var i = 0; i < recipeData.length; i++) {
+        if (recipeData[i].recipe == dish) {
+          recipe = recipeData[i];
+          break;
+        }
+      }
+      if (recipe) {
+        console.log(recipe);
+        document.getElementById('image').src = recipe.card_image;
+        //INGREDIENTS LIST
+        var ingredients=recipe.ingredients;
+        for(var j=0; j<ingredients.length; j++){
+          ingredientList = "<li>" + ingredients[j] + "</li>";
+          document.getElementById("ingredients").innerHTML += ingredientList;
+        }
+        //INSTRUCTIONS LIST
+        var instructions=recipe.instructions;
+        var instructionList= document.createElement('OL');
+        instructionList.setAttribute("id", "myInstructions");
+        document.getElementById("instructions").appendChild(instructionList);
+        for(var i=0; i<instructions.length; i++){
+          var y = document.createElement("LI");
+          var t = document.createTextNode(instructions[i]);
+          y.appendChild(t);
+          document.getElementById("myInstructions").appendChild(y);
+        }
+        console.log(instructions);
+        // document.getElementById('ingredients')
+        // document.getElementById('instructions')
+      } else {
+        alert('Recipe not found!'); 
+      }
+  }
+};
+request.onerror = function (e) {
+  console.error(request.statusText);
+};
+request.send(null);
+</script>
+    <script type="text/javascript" src="js/nav.js"></script>
+</body>
+</html>

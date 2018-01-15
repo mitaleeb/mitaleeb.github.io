@@ -1,168 +1,57 @@
+
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Little Mit's Kitchen</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Poiret+One|Monoton|Bad+Script|Raleway|Quicksand:300,400|Roboto:100,400" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/full-slider.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Little Mit's Kitchen</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" id="bulma" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.2/css/bulma.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Nixie+One|Mr+De+Haviland" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300|Lato:300|Montserrat:300" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+<body class="index-container">
+    
+    <nav class="nav section nav-bub" id="top">
+      <div class="nav-left">
+        <a class="nav-item" href="index.html">
+          <img src="images/LMK%20Logo.png" alt="LMK Logo">
+        </a>
+      </div>
 
-<body>
+      <span class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-               <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>-->
-                <a class="navbar-brand" href="#">Little Mit's Kitchen</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-             <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                  <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                   
-                </ul>
-            </div> </li>-->
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
+      <div class="nav-right nav-menu">
+        <a class="nav-item navbar-item" href="recipes.html">
+         Recipes
+        </a>
+        <a class="nav-item navbar-item" href="https://urlgeni.us/instagram/bqsm">
+          Instagram
+        </a>
+        <a class="nav-item navbar-item" href="about.html"> 
+          About Me
+        </a>
+      </div>
     </nav>
+    <!--NAVIGATION BAR ENDS-->
 
-    <!-- Full Page Image Background Carousel Header -->
-    <header id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for Slides -->
-        <div class="carousel-inner">
-        <div class="carousel-caption">
-               <h1>COMING SOON</h1>
-                     <hr class="style-seven">
-                    
-            
-                    <div id="clockdiv">
-                  <div>
-                    <span class="timer days"></span>
-                    <div class="smalltext">Days</div>
-                  </div>
-                  <div>
-                    <span class="timer hours"></span>
-                    <div class="smalltext">Hours</div>
-                  </div>
-                  <div>
-                    <span class="timer minutes"></span>
-                    <div class="smalltext">Minutes</div>
-                  </div>
-                  <div>
-                    <span class="timer seconds"></span>
-                    <div class="smalltext">Seconds</div>
-                  </div>
-                </div>
-            <div>
-                <a id="myBtn" class="btn btn-outline btn-xl page-scroll">
-                    <span>About Me</span>
-                </a>
-                <a id="myBtn" class="btn btn-outline btn-xl page-scroll" href="https://urlgeni.us/instagram/bqsm" target="_blank">
-                    <span>Instagram</span>
-                    <span class="fa fa-instagram fa-2x"></span>
-                </a>
-            </div>
-            
-                </div>
-         
-            <div class="item active">
-                <!-- Set the first background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('images/tiramisu-mini.JPG');"></div>
-            </div>
-            <div class="item">
-                <!-- Set the second background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('images/tarts.JPG');"></div>
-            </div>
-            <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('images/noodles.jpg');"></div>
-            </div>
+    <section class="hero is-primary is-large">
+      <div class="hero-body has-text-centered">
+        <div class="container has-text-centered">
+          <h1 class="cook-quote">
+            Cooking is a science that is refined to an art 
+          </h1>
         </div>
-   <div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">&times;</span>
-      About me
-    </div>
-    <div class="modal-body">
-       <img src="images/profile.jpg" class="img-circle" alt="Face" width="100" height="100">
-      <p class= "modal-intro">My name is Mitalee Bharadwaj and I am currently studying Computer Engineering at University of Illinois at Urbana-Champaign. While I may go to college in the middle of cornfields, my hometown is actually right around Princeton, New Jersey. I am so excited to start this blog to share with you my collection of favorite recipes to cook and bake, that'll (of course) continue to grow. My goal is to share delicious recipes, great eateries/restaurants, and momentous pictures wherever I go. While I finish coding this website, enjoy my feed on Instagram!</br> <i>Side Note:</i> I'm vegetarian, but don't let that deter you from checking out my blog &hearts;</p>
-    </div>
-  </div>
-
-</div>       
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-
-    </header>
-
-    <!-- Page Content -->
-    <!-- /.container -->
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/index.js"></script>
-
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 20000 //changes the speed
-    })
-    </script>
-
+          <a class="view-butt" href="recipes.html">View Recipes</a>
+      </div>
+    </section>
+  
+    <script type="text/javascript" src="js/nav.js"></script>
 </body>
-
 </html>
