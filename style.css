@@ -103,11 +103,13 @@ html, body {
   padding: 16px 32px;
 }
 
-.individ_card:hover .card-overlay {
+.individ_card:hover .card-overlay,
+.individ_card:focus .card-overlay{
     opacity: 0.5;
 }
 
-.individ_card:hover .middle {
+.individ_card:hover .middle,
+.individ_card:focus .middle{
   opacity: 1;
 }
 
@@ -146,7 +148,8 @@ cursor: pointer;
     overflow: hidden;
 }
 
-.view-butt:hover {
+.view-butt:hover,
+.view-butt:focus {
 background-color: white;
 color: black !important;
 }
