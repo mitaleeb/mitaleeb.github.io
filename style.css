@@ -108,15 +108,17 @@ html, body {
   padding: 16px 32px;
 }
 
-.individ_card:hover .card-overlay{
-    opacity: 0.5;
+@media only screen and (min-width: 1025px) {
+  
+  .individ_card:hover .card-overlay{
+      opacity: 0.5;
+  }
+
+  .individ_card:hover .middle{
+    opacity: 1;
+  }
+
 }
-
-.individ_card:hover .middle{
-  opacity: 1;
-}
-
-
 
 .cook-quote{
 font-family: 'Montserrat', sans-serif;
@@ -150,12 +152,12 @@ cursor: pointer;
 .card-image {
     overflow: hidden;
 }
-
-.view-butt:hover{
-background-color: white;
-color: black !important;
+@media only screen and (min-width: 1025px) {
+  .view-butt:hover{
+  background-color: white;
+  color: black !important;
+  }
 }
-
 .nav-right{
 font-family: 'Montserrat', sans-serif;
 color: black;
