@@ -177,4 +177,6 @@ text-transform: capitalize;
 
 .main-recipe {
     margin-top: 1em;
+    width:100%;
+    overflow-x: hidden;
 }
