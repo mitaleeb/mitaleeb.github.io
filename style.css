@@ -108,13 +108,11 @@ html, body {
   padding: 16px 32px;
 }
 
-.individ_card:hover .card-overlay,
-.individ_card:click .card-overlay{
+.individ_card:hover .card-overlay{
     opacity: 0.5;
 }
 
-.individ_card:hover .middle,
-.individ_card:click .middle{
+.individ_card:hover .middle{
   opacity: 1;
 }
 
