@@ -34,7 +34,6 @@ html, body {
 
 .about-description {
     margin: 10%;
-
 }
 
 .adjust-align {
@@ -110,12 +109,12 @@ html, body {
 }
 
 .individ_card:hover .card-overlay,
-.individ_card:focus .card-overlay{
+.individ_card:click .card-overlay{
     opacity: 0.5;
 }
 
 .individ_card:hover .middle,
-.individ_card:focus .middle{
+.individ_card:click .middle{
   opacity: 1;
 }
 
